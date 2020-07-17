@@ -146,3 +146,13 @@ $ git push origin master
 
 이후 변경사항이 생길 때마다, `add`-`commit`-`push` 를 반복한다.
 
+
+
+### 3. `pull` - 원격 저장소로부터 불러오기
+
+```bash
+$ git pull origin master
+```
+
+`origin` 이라는 이름의 원격 저장소로부터 새로운 commit 기록들을 불러온다.
+

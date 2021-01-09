@@ -13,3 +13,11 @@
 This is a repository for recording my studies after getting involved in SSAFY in July 2020. Computer Science & overall info about programming are studied and recorded here.
 
 There are many things I've studied that haven't been recorded in the meantime, so I'm going to review them again and upload them one by one with new studies.
+
+---
+
+
+
+## ETC(기타)
+
+[UX / UI 디자인의 이해](https://github.com/sw0817/TIL/blob/master/CS%20Study/UI%20UX%20%EB%94%94%EC%9E%90%EC%9D%B8%EC%9D%98%20%EC%9D%B4%ED%95%B4/README.md)

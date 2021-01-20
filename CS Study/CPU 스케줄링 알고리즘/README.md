@@ -16,7 +16,7 @@
 
 #### PCB(Process Control Block)
 
-![image-20200917125120067](CPU 스케줄링 알고리즘.assets/image-20200917125120067.png)
+![image-20200917125120067](README.assets/image-20200917125120067.png)
 
 -> 작업관리자 / RAMMAP
 
@@ -150,7 +150,7 @@
 - 특징 1. Simple & Fair : 단순하고 일반적으로 공평한 방식
 - 효율성은 때에 따라 좋을 수도 안좋을 수도 있다.
 
-![](CPU 스케줄링 알고리즘.assets/fcfs.png)
+![](README.assets/fcfs.png)
 
 호위 효과란, 처리하는데 오랜 시간이 걸리는 p1 뒤로 p2, p3가 대기하고 있는 것이 마치 p1을 호위하는 것과 같아 보인다는 뜻에서 호위효과라고 한다.
 
@@ -172,9 +172,9 @@
 
 - 특징 2. 비현실적. 그러나, 하나의 프로세스가 cpu를 얼마나 사용할 지를 아는 것은 어렵기 때문에 비현실적이다.
 
-![](CPU 스케줄링 알고리즘.assets/sjf1.png)
+![](README.assets/sjf1.png)
 
-![](CPU 스케줄링 알고리즘.assets/sjf2.png)
+![](README.assets/sjf2.png)
 
 
 
@@ -186,9 +186,9 @@
 >
 > 해결방법: aging. 시간이 지날수록 처리되지 않은 프로세스들의 우선순위를 조금씩 높여주는 방식을 aging이라고 한다.
 
-![prioirty](CPU 스케줄링 알고리즘.assets/priority.png)
+![prioirty](README.assets/priority.png)
 
-![](CPU 스케줄링 알고리즘.assets/prioirty2.png)
+![](README.assets/prioirty2.png)
 
 
 

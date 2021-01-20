@@ -9,4 +9,5 @@
 - [Wireshark](https://github.com/sw0817/TIL/blob/master/CS%20Study/%EC%99%80%EC%9D%B4%EC%96%B4%EC%83%A4%ED%81%AC(Wireshark)/README.md)
 - [CORS(교차 출처 리소스 공유)](https://github.com/sw0817/TIL/blob/master/CS%20Study/%EA%B5%90%EC%B0%A8%20%EC%B6%9C%EC%B2%98%20%EB%A6%AC%EC%86%8C%EC%8A%A4%20%EA%B3%B5%EC%9C%A0(CORS)/README.md)
 - [DNS](https://github.com/sw0817/TIL/blob/master/CS%20Study/DNS.md)
+- [CPU 스케줄링 알고리즘](https://github.com/sw0817/TIL/blob/master/CS%20Study/CPU%20%EC%8A%A4%EC%BC%80%EC%A4%84%EB%A7%81%20%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98/README.md)
 

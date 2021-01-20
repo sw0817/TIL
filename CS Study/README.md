@@ -8,4 +8,5 @@
 - [실시간 네트워크 통신](https://github.com/sw0817/TIL/blob/master/CS%20Study/%EC%8B%A4%EC%8B%9C%EA%B0%84_%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC_%ED%86%B5%EC%8B%A0.md)
 - [Wireshark](https://github.com/sw0817/TIL/blob/master/CS%20Study/%EC%99%80%EC%9D%B4%EC%96%B4%EC%83%A4%ED%81%AC(Wireshark)/README.md)
 - [CORS(교차 출처 리소스 공유)](https://github.com/sw0817/TIL/blob/master/CS%20Study/%EA%B5%90%EC%B0%A8%20%EC%B6%9C%EC%B2%98%20%EB%A6%AC%EC%86%8C%EC%8A%A4%20%EA%B3%B5%EC%9C%A0(CORS)/README.md)
+- [DNS](https://github.com/sw0817/TIL/blob/master/CS%20Study/DNS.md)
 

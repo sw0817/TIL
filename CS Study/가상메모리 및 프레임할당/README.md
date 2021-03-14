@@ -75,7 +75,7 @@ case 2) Bit = Invalid
 
 다음 그림은 Page Fault의 전체적인 흐름을 보여준다.
 
-![](README.assets/page fault.JPG)
+![](README.assets/page_fault.JPG)
 
 
 
@@ -119,7 +119,7 @@ case 2) Bit = Invalid
 
 > 말 그대로 사용되지 않을, 예측이 필요한 알고리즘이기 때문에 **이론상으로만 존재**하며 다른 알고리즘들의 성능 비교를 위해 사용된다.
 
-![](README.assets/optimal algorithm.JPG)
+![](README.assets/optimal_algorithm.JPG)
 
 네 번째 순서에서 2번 Page가 실행되어야 하는데, 메모리에 존재하지 않아 Page Fault가 일어나고, 비어있는 Frame을 만들기 위해 가장 오랫동안 사용되지 않을 Page의 Frame을 선택하게 되고, 위 그림에서 그 Victim Frame의 Page는 7번으로 선택되게 된다.
 
@@ -129,13 +129,13 @@ case 2) Bit = Invalid
 
 실제 메모리에 올라온지(Frame을 차지한지) 가장 오래된 Frame을 선택하는 알고리즘
 
-![](README.assets/FIFO algorithm.JPG)
+![](README.assets/FIFO_algorithm.JPG)
 
 하지만 FIFO 알고리즘은 Frame 수가 많은데 오히려 Page Fault가 많이 발생하는 모순을 일으키기도 한다.
 
 (Frame이 많다면 당연히 Page Fault가 적어야한다.)
 
-![](README.assets/FiFO worse.JPG)
+![](README.assets/FiFO_worse.JPG)
 
 
 
@@ -143,7 +143,7 @@ case 2) Bit = Invalid
 
 가장 오랫동안 사용되지 않은 Page의 Frame을 선택하는 알고리즘 (FIFO와 다름)
 
-![](README.assets/LRU algorithm.JPG)
+![](README.assets/LRU_algorithm.JPG)
 
 FIFO에서는 6 번째 실행 순서인 3번 Page가 Victim Frame으로 메모리에 올라온지 가장 오래된 0번 Page의 Frame을 선택한 반면, LRU에서는 0 번째 Page는 바로 직전에 실행되었기 때문에 실행된지 가장 오래된 1번 Page의 Frame을 선택함.
 
@@ -155,7 +155,7 @@ LRU 알고리즘은 최근에 실행되었으면 금방 다시 한 번 사용될
 
 - 두 번째 : 실행되는 순서를 Stack 으로 쌓아서 관리하는 것. 그러면 Stack의 순서는 위에서 아래로 최근에서 과거 순이 됨.
 
-  ![](README.assets/LRU stack.JPG)
+  ![](README.assets/LRU_stack.JPG)
 
 
 
@@ -186,7 +186,7 @@ LRU 알고리즘은 최근에 실행되었으면 금방 다시 한 번 사용될
 
 클락 알고리즘은 하드웨어적인 지원을 통해 LRU, LFU 알고리즘에서의 운영 오버헤드를 줄일 수 있다. 이는 LRU를 근사시킨 알고리즘으로, LRU 알고리즘이 가장 오래전에 참조된 페이지를 교체하는 것에 반해 클락 알고리즘은 오랫동안 참조되지 않은 페이지 중 하나를 교체한다. 즉, 최근에 참조되지 않은 페이지를 교체 대상으로 선정하는 것은 유사하지만, 교체되는 페이지의 참조 시점이 가장 오래되었다는 것을 보장할 수는 없다. But 하드웨어적인 지원으로 동작하기 때문에 LRU에 비해 페이지의 관리가 훨씬 빠르고 효율적으로 이루어진다. 따라서 대부분의 시스템에서 페이지 교체 알고리즘으로 클락 알고리즘을 채택한다.
 
-![](README.assets/Clock Algorithm.png)
+![](README.assets/Clock_Algorithm.png)
 
 이 알고리즘은 교체할 페이지를 선정하기 위해 페이지 **프레임들의 참조비트(Referenve Bit)를 순차적으로 조사**한다. 참조비트는 각 프레임마다 하나씩 존재하며 그 프레임 내의 페이지가 참조될 때 하드웨어에 의해 1로 세팅된다. 여기서 클락 알고리즘은 참조비트가 1인 프레임은 0으로 바꾼 뒤 그냥 지나가고, 참조비트가 0인 페이지를 교체한다. 모든 페이지 프레임을 다 조사한 경우 첫 번째 페이지 프레임부터 조사 작업을 반복한다.
 
